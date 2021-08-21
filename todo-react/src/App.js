@@ -57,7 +57,7 @@ const App = () => {
         }}
         showAddTask={showAddTask} />
       {showAddTask && <AddTask onAdd={addTask} />}
-      {tasks.length > 0 ? (<Tasks tasks={tasks} onreminder={toggleReminder} ondelete={deleteTask} />) : ("no tasks")}
+      {tasks.length > 0 ? (<Tasks tasks={tasks} onreminder={toggleReminder} ondelete={deleteTask} />) : <h2>no tasks</h2>}
     </div>
   );
 }
